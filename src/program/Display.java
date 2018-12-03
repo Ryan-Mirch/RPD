@@ -40,7 +40,7 @@ public class Display extends Application {
 
     private static final double MIN_SCALE = .1;
     private static final double MAX_SCALE = 10;
-    private static final String PROGRAM_NAME = "RPD v1.3.0";
+    private static final String PROGRAM_NAME = "RPD v1.4.0";
 
     private static final boolean TEST = true;
     private static final boolean SKIP_LOGIN = false;
