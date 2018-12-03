@@ -18,6 +18,7 @@ import javafx.stage.WindowEvent;
 
 public class ChangeValue {
 
+
     static TextField textField;
     static int returnInt = -1;
     static String returnString = "";
@@ -90,7 +91,7 @@ public class ChangeValue {
         //HBox.setHgrow(textField, Priority.ALWAYS);
 
         Scene scene = new Scene(layout);
-        scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+        scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 
         scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             public void handle(KeyEvent event) {
@@ -137,7 +138,7 @@ public class ChangeValue {
         HBox.setHgrow(textField, Priority.ALWAYS);
 
         Scene scene = new Scene(layout);
-        scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+        scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 
         scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             public void handle(KeyEvent event) {

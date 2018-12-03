@@ -38,7 +38,7 @@ public class AlertBox {
 		label.setPadding(new Insets(10,10,10,10));
 		
 		Scene scene = new Scene(layout);
-		scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+		scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 		window.getIcons().add(Display.icon);
 		window.setScene(scene);
 		window.setResizable(false);

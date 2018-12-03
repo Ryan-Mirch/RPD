@@ -625,7 +625,7 @@ public class SettingsBox {
 		mainLayout.setCenter(generalLayout);
 		
 		Scene scene = new Scene(mainLayout);
-		scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+		scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 		window.getIcons().add(Display.icon);
 		window.setScene(scene);
 		window.setResizable(false);

@@ -92,8 +92,9 @@ public class FeatureSettings {
 		
 		Button confirmButton = new Button("Confirm");
 		Button removeButton = new Button("Remove Feature");
-		Button cancelButton = new Button("Cancel");	
-		
+		Button cancelButton = new Button("Cancel");
+		Button copyButton = new Button("Copy");
+
 		removeButton.setOnAction(e -> {
 			stone.remove();
 			Display.stones.remove(stone);
@@ -121,16 +122,33 @@ public class FeatureSettings {
 			window.close();
 			
 		});
+
+		copyButton.setOnAction(e -> {
+			Stone newStone = new Stone(stone.getSize(), stone.getX() + 5, stone.getY() + 5, stone.getW(), stone.getL(), 100);
+			Display.stones.add(newStone);
+			Display.obstacles.add(newStone);
+			newStone.setColor(4);
+
+			try {Loading.saveProject(1);}
+			catch (IOException e1) {e1.printStackTrace();}
+			System.out.println("saved insert feature");
+
+			window.close();
+		});
 			
 		cancelButton.setOnAction(e -> window.close());
 		
 		HBox bottomLayout = new HBox(40);
 		bottomLayout.getChildren().addAll(confirmButton, cancelButton);
 		bottomLayout.setAlignment(Pos.CENTER);
-		bottomLayout.setPadding(new Insets(10,10,10,10));	
-		
-		
-		HBox obstacleWidthLayout = new HBox(5);
+		bottomLayout.setPadding(new Insets(10,10,10,10));
+
+        HBox topLayout = new HBox(40);
+        topLayout.getChildren().addAll(copyButton, removeButton);
+        topLayout.setAlignment(Pos.CENTER);
+        topLayout.setPadding(new Insets(10,10,10,10));
+
+        HBox obstacleWidthLayout = new HBox(5);
 		obstacleWidthLayout.getChildren().addAll(obstacleWidthLabel, obstacleWidthTextField);
 		obstacleWidthLayout.setAlignment(Pos.CENTER_RIGHT);
 		
@@ -147,7 +165,7 @@ public class FeatureSettings {
 		textFieldLayout.setAlignment(Pos.CENTER);
 		
 		VBox obstacleLayout = new VBox(20);
-		obstacleLayout.getChildren().addAll(removeButton, textFieldLayout,  
+		obstacleLayout.getChildren().addAll(topLayout, textFieldLayout,
 											bottomLayout);
 		
 		obstacleLayout.setAlignment(Pos.CENTER);
@@ -155,7 +173,7 @@ public class FeatureSettings {
 	
 		
 		Scene scene = new Scene(obstacleLayout);
-		scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+		scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 		
 		scene.addEventFilter(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
 		    public void handle(KeyEvent event) {

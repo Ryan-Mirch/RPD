@@ -134,7 +134,7 @@ public class Information {
 	
 		
 		Scene scene = new Scene(mainLayout);
-		scene.getStylesheets().add(Display.class.getResource("customStyle.css").toExternalForm());
+		scene.getStylesheets().add(Display.class.getResource("/customStyle.css").toExternalForm());
 		
 		scene.addEventFilter(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
 		    public void handle(KeyEvent event) {
