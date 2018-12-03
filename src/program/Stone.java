@@ -1,11 +1,9 @@
 package program;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Random;
-
-import windows.FeatureSettings;
 import javafx.scene.paint.Color;
+import windows.FeatureSettings;
+
+import java.util.Random;
 
 public class Stone {
     private String size;

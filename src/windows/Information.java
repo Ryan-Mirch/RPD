@@ -1,12 +1,5 @@
 package windows;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
-import program.Calculate;
-import program.Display;
-import program.Loading;
-import program.Stone;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.EventHandler;
@@ -24,6 +17,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import program.Calculate;
+import program.Display;
+
+import java.util.ArrayList;
 
 public class Information {
 	

@@ -1,24 +1,21 @@
 package program;
 
+import javafx.embed.swing.SwingFXUtils;
+import javafx.scene.SnapshotParameters;
+import javafx.scene.image.WritableImage;
+import javafx.scene.transform.Transform;
+import javafx.stage.FileChooser;
+import windows.AlertBox;
+import windows.Information;
+import windows.Projects;
+import windows.SettingsBox;
+
+import javax.imageio.ImageIO;
 import java.awt.image.RenderedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.imageio.ImageIO;
-
-import windows.AlertBox;
-import windows.Information;
-import windows.Projects;
-import windows.SettingsBox;
-import javafx.embed.swing.SwingFXUtils;
-import javafx.scene.SnapshotParameters;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.control.Button;
-import javafx.scene.image.WritableImage;
-import javafx.scene.transform.Transform;
-import javafx.stage.FileChooser;
 
 public class Buttons {
     /*
