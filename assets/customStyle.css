@@ -1,0 +1,329 @@
+.root{
+	/************Application Colors************/
+	-swatch-000: #d7e1e5;
+	-swatch-100: #607D8B;
+	-swatch-200: #B3E5FF;	
+	-swatch-300: #7295A6;	
+	-swatch-400: #aabfc9;	
+	-swatch-500: #465B66;	
+	-swatch-600: #35454D;	
+	-swatch-700: #232E33;	
+	-swatch-grey: rgb(200.0, 200.0, 200.0);
+	-swatch-dark-grey: rgb(150.0, 150.0, 150.0);
+	-swatch-light-grey: rgb(230.0, 230.0, 230.0);
+	/******************************************/
+	
+	/************General***********************/
+	-fx-background-color: -swatch-300;
+	-fx-font-family: 'Roboto Medium';
+	-fx-font-size: 16.0px;
+	-fx-disabled-opacity: 0.6;
+	/******************************************/
+}	
+
+	/************toolBar***********************/
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: -swatch-grey;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: -swatch-500;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: -swatch-300;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+
+	/******************************************/
+	
+	/************Buttons***********************/
+	
+
+	
+.toggle-button, .button{
+	-fx-text-fill: -fx-text-button-normal;
+	-fx-font-family: 'Roboto';
+	-fx-font-weight: bold;
+	-fx-font-size: 12;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 4;
+	-fx-padding: 4px;
+	
+	-fx-text-button-normal: black;
+	
+	-fx-border-width:0.5px;
+	-fx-border-radius:4;
+	-fx-border-color: black;
+	-fx-background-color: -swatch-400;
+	
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.50), 3.0, 0.4, 0, 1);
+}
+
+
+.button-borderless{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.0), 3.0, 0.4, 0, 1);
+}	
+
+	
+.button:hover{
+	-fx-background-color: -swatch-500;
+	-fx-border-color: black;
+}
+
+.button:armed, .button:default:armed, .choice-box:armed{
+	-fx-background-color: -swatch-600;
+}
+
+
+/************MenuButton***********************/
+
+.menu-button {
+	-fx-text-fill: -fx-text-button-normal;
+	-fx-font-family: 'Roboto';
+	-fx-font-weight: bold;
+	-fx-font-size: 12;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 4;
+	-fx-padding: 0px;
+	
+	-fx-text-button-normal: black;
+	
+	-fx-border-width:0.5px;
+	-fx-border-color: black;
+	-fx-border-radius:4;
+	-fx-background-color: -swatch-400;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.5), 3.0, 0.4, 0, 1);
+}
+
+.menu-button-borderless{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.0), 3.0, 0.4, 0, 1);
+	
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-background-color: black;
+}
+
+.menu-button:hover{
+	-fx-background-color: -swatch-500;
+	-fx-border-color: black;
+}
+
+	/************ComboBox***********************/
+.choice-box {
+	-fx-text-fill: black;
+	-fx-font-family: 'Roboto';
+	-fx-font-weight: bold;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 4.0;
+	-fx-border-width:0.5px;
+	-fx-border-color: black;
+	-fx-border-radius:4;
+	-fx-background-color: -swatch-400;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.50), 4.0, 0.4, 0, 1); 
+	
+}
+
+.choice-box-prob {
+	-fx-text-fill: black;
+	-fx-font-family: 'Roboto';
+	-fx-font-weight: normal;
+	-fx-font-size: 9;
+}
+
+.choice-box:hover{
+	-fx-background-color: -swatch-500;
+	-fx-border-color: black;
+}
+
+.choice-box>.label {
+	-fx-padding: 0.675em 1.05em 0.675em 0.5em;
+	-fx-font-weight: bold;
+	-fx-text-fill:black;
+}
+
+.choice-box>.open-button {
+	-fx-padding: 0.5em 0.7em 0.5em 0.5em;
+	-fx-background-radius: 0.0 0.0 0.0 0.0;
+}
+
+.choice-box>.open-button>.arrow {
+	-fx-background-color: -swatch-700;
+}
+
+.combo-box-base .arrow-button:hover .arrow, .spinner .increment-arrow-button:hover .increment-arrow,
+	.spinner .decrement-arrow-button:hover .decrement-arrow {
+	-fx-background-color: -swatch-dark-grey;
+}
+
+.menu-item:focused {
+	-fx-background-color: -swatch-grey;
+}
+
+.radio-menu-item, .check-menu-item {
+	-fx-padding: 0.4em 0.4em 0.4em 0em;
+	-fx-border-color: transparent;
+}
+
+.context-menu {
+	-fx-background-color: white;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: -1;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.20), 8.0, 0.4, 0, 2);
+	
+}
+	/*******************************************/
+	
+	/************CheckBoxes*********************/
+	
+.check-box .text {
+	-fx-fill: -fx-text-base-color;
+	-fx-font-weight: bold;
+}
+
+.check-box>.box, .check-box>.box.unfocused, .check-box:disabled>.box,
+	.check-box:indeterminate>.box {
+	-fx-border-radius: 4.0;
+	-fx-border-color: -swatch-grey;
+	-fx-border-width: 2;
+	-fx-background-radius: 4;
+	-fx-background-color: transparent;
+	-fx-padding: 1;
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.50), 4.0, 0.4, 0, 1);
+	
+}
+
+.check-box:selected>.box {
+	-fx-border-color: -swatch-400;
+	-fx-background-color: -swatch-400;
+}
+	
+.check-box:selected>.box>.mark {
+	-fx-background-color: white;
+}
+
+	/************************************************/
+	
+	/************TextFields**************************/
+.text {
+	-fx-font-smoothing-type: gray;
+}
+
+.text-area, .text-field {
+	-fx-background-color: -swatch-grey;
+	-fx-background-radius: 4.0;
+	-fx-padding: 0.1em 0.1em 0.1em 0.1em;
+	-fx-border-color: -swatch-grey;
+	-fx-border-width: 0 0 0 0;
+	-fx-border-radius:4;
+	-fx-highlight-fill: rgb(94.0, 203.0, 234.0);
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.50), 4.0, 0.4, 0, 1);
+	
+}
+	
+	
+	/************************************************/
+	
+	/************DatePicker**************************/	
+.date-picker-popup  {
+	-fx-background-color: -swatch-500;
+}
+
+.date-picker-popup>.month-year-pane {
+	-fx-background-color: -swatch-500;
+}
+
+.date-picker-popup>*>.spinner>.button>.left-arrow, .date-picker-popup>*>.spinner>.button>.right-arrow
+	{
+	-fx-background-color: white;
+}
+
+.date-picker-popup>*>.spinner {
+	-fx-border-width: 0;
+}
+
+.date-picker-popup>*>.spinner>.label {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.date-picker-popup>*>.day-name-cell, .date-picker-popup>*>.week-number-cell
+	{
+	-fx-font-weight: normal;
+	-fx-text-fill: -swatch-dark-grey;
+	-fx-font-size: 1em;
+}
+
+.date-picker .arrow-button {
+	-fx-background-color: transparent;
+}
+
+.date-picker .arrow-button .arrow {
+	-fx-background-insets: -4;
+}
+
+.date-picker .date-picker-display-node {
+	-fx-border-width: 0;
+}
+
+	/************************************************/
+	
+	/************Labels******************************/
+	
+.label {
+	-fx-text-fill: -fx-text-base-color;
+	-fx-font-weight: bold;
+	
+}
+
+.label:disabled {
+	-fx-opacity: -fx-disabled-opacity;
+}
+
+.label:show-mnemonics>.mnemonic-underline {
+	-fx-stroke: -fx-text-base-color;
+}
+	
+	/************************************************/
+	
+	/************************************************/
+
+.tooltip {
+    -fx-background: rgba(30,30,30);
+    -fx-text-fill: white;
+    -fx-background-color: rgba(30,30,30,0.8);
+    -fx-background-radius: 0px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em; /* 10px */
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 10, 0.0 , 0 , 3 );
+    -fx-font-size: 16px;
+}
+	
+	
+	
+	
+	
+	
