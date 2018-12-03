@@ -657,9 +657,11 @@ public class Display extends Application {
 
         for(MenuItem x: addStoneMB.getItems()) {
             x.setOnAction(event -> {
+
+                fill = false;
                 String choice = x.getText();
                 System.out.println(choice);
-                for(Stone s: stonesAvailable) {
+                for(Stone s: allStones) {
                     if(choice.equals(s.getSize())){
                         Stone singleStone = new Stone(s);
                         singleStone.setX(-singleStone.getW()-20);
