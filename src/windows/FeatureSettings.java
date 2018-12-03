@@ -91,7 +91,7 @@ public class FeatureSettings {
 		
 		
 		Button confirmButton = new Button("Confirm");
-		Button removeButton = new Button("Remove Feature");
+		Button removeButton = new Button("Remove");
 		Button cancelButton = new Button("Cancel");
 		Button copyButton = new Button("Copy");
 
